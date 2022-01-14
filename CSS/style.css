@@ -47,3 +47,8 @@ body{
   font-weight:bold;
   font-size:x-large;
 }
+#menu{
+  text-align:center;
+  color:black;
+  font-weight:bold;
+}
