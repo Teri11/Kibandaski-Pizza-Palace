@@ -8,3 +8,10 @@ body{
 #nav{
   color:rgb(250, 239, 233);
 }
+.page1{
+  background-image: url(images/f96980c7139f78388b9c897686b8dbcf);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35rem;
+  background-color:rgb(131,74,45);
+}
