@@ -9,9 +9,41 @@ body{
   color:rgb(250, 239, 233);
 }
 .page1{
-  background-image: url(images/f96980c7139f78388b9c897686b8dbcf);
+  background-image: url(images/wood.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 35rem;
   background-color:rgb(131,74,45);
+}
+.page1>h1{
+  color:white;
+  text-align:end;
+  margin-right: 7rem;
+  /* margin-bottom: -2rem; */
+  font-style: italic;
+}
+.page1>h2{
+  color:white;
+  text-align:end;
+  margin-right: 7rem;
+  font-style: italic;
+}
+#btn{
+  margin-left:12rem; 
+}
+#about{
+  text-align:center;
+  color:black;
+  font-weight:bold;
+
+}
+.container1{
+  background-image: url(images/logokibanda.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  text-align:center;
+  color:rgb(38, 35, 35);
+  font-weight:bold;
+  font-size:x-large;
 }
