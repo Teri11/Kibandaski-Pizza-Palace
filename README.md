@@ -7,6 +7,11 @@ A web application that shows Kibandaski Pizza Palace what they offer at affordab
 
 ## Design
 <img src="images/landingpage.jpeg" alt="landingpage">
+<img src="images/about us.jpeg" alt="about us">
+<img src="images/menu1.jpeg" alt="menu1">
+<img src="images/menu2.jpeg" alt="menu2">
+<img src="images/test.jpeg" alt="test">
+<img src="images/footer.jpeg" alt="footer">
 
 ## Setup/Installation Requirements
 1)Install the Visual studio code.<br>2)Git clone the repository.<br>3)Make sure the live server extension is installed.<br>4)Click on Go live.
