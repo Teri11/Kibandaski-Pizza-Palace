@@ -29,4 +29,4 @@ A web application that shows Kibandaski Pizza Palace what they offer at affordab
 Email Address;augustineteri157@gmail.com
 
 ## License
-Copyright (c) [2021] Kubai Augustine Mweteri.
+Copyright (c) [2022] Kubai Augustine Mweteri.
