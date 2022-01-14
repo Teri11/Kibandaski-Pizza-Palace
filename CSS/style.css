@@ -9,10 +9,11 @@ body{
   color:rgb(250, 239, 233);
 }
 .page1{
-  background-image: url(https://wallpaperset.com/w/full/0/e/8/26198.jpg);
+  background-image: url(https://www.teahub.io/photos/full/31-311248_data-src-wood-wallpaper-1080p-images-wood-floor.jpg);
+  /* background-image: url(https://wallpaperset.com/w/full/0/e/8/26198.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 35rem;
+  height: 39rem;
   background-color:rgb(131,74,45);
 }
 .page1>h1{
@@ -38,12 +39,14 @@ body{
 
 }
 .container1{
-  background-image: url(images/logokibanda.png);
+  background-image: url(https://wallpaperset.com/w/full/0/e/8/26198.jpg);
+  /* background-image: url(images/logokibanda.png); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 20rem;
   text-align:center;
-  color:rgb(38, 35, 35);
+  color:white;
+  /* color:rgb(38, 35, 35); */
   font-weight:bold;
   font-size:x-large;
 }
