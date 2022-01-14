@@ -75,3 +75,12 @@ body{
 .checked {
   color: orange;
 }
+#btn2{
+  float: end;
+  margin-left: 75rem;
+  background-color:rgb(29,28,34);
+
+}
+#btn2:hover{
+  color: grey;
+}
