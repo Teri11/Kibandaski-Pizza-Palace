@@ -301,23 +301,36 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form id="palace">
+              <!-- Name -->
+              <select class="form-select" aria-label="Default select example">
+                <option selected>select pizza</option>
+                <option value="1">neapolitan pizza</option>
+                <option value="2">chicago pizza</option>
+                <option value="3">new york-style pizza</option>
+                <option value="4">sicilian pizza</option>
+                <option value="5">greek pizza</option>
+                <option value="6">california pizza</option>
+                <option value="7">detroit pizza</option>
+                <option value="8">st. louis pizza<option>
+              </select>
+              <!-- size -->
               <div class="mb-3">
                 <label for="recipient-name" class="col-form-label"><b>Choose your pizza size;</b></label>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                  <input class="form-check-input" type="radio" name="pizza" id="small" value="small" checked>
                   <label class="form-check-label" for="flexRadioDefault1">
                   Small-500
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" checked>
+                  <input class="form-check-input" type="radio" name="pizza" id="medium"  value="medium" checked>
                   <label class="form-check-label" for="flexRadioDefault2">
                     Medium-1000
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" checked>
+                  <input class="form-check-input" type="radio" name="pizza" id="large" value="large" checked>
                   <label class="form-check-label" for="flexRadioDefault2">
                     Large-1500
                   </label>
@@ -328,21 +341,21 @@
                 <label for="message-text" class="col-form-label"><b>Choose your pizza</b></label>
                 <label for="recipient-name" class="col-form-label"><b>crust</b></label>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
+                  <input class="form-check-input" type="radio" name="crusty" id="crispy" value="crispy" checked>
                   <label class="form-check-label" for="flexRadioDefault1">
                   Crispy-50
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" checked>
+                  <input class="form-check-input" type="radio" name="crusty" id="stuffed" value="stuffed"checked>
                   <label class="form-check-label" for="flexRadioDefault2">
                     stuffed-50
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" checked>
+                  <input class="form-check-input" type="radio" name="crusty" id="gluten_free" value="gluten_free" checked>
                   <label class="form-check-label" for="flexRadioDefault2">
-                    Gluten-free-50
+                    gluten_free-50
                   </label>
                 </div>
               
@@ -350,34 +363,35 @@
                <!--Toppings-->
                <div class="mb-3">
                 <label for="message-text" class="col-form-label"><b>Choose your pizza</b></label>
-                <label for="recipient-name" class="col-form-label"><b>Toppings</b>
+                <label for="recipient-name" class="col-form-label"><b>toppings</b>
                 </label>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+                  <input class="form-check-input" type="radio" name="toppings" id="pepperoni"value="pepperoni" checked>
                   <label class="form-check-label" for="flexRadioDefault1">
-                    Pepperoni-100
+                    pepperoni-100
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" checked>
+                  <input class="form-check-input" type="radio" name="toppings" id="supreme" value="supreme"  checked>
                   <label class="form-check-label" for="flexRadioDefault2">
-                    Supreme-100
+                    supreme-100
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" checked>
+                  <input class="form-check-input" type="radio" name="toppings" id="hawaiian" value="hawaiian"   checked>
                   <label class="form-check-label" for="flexRadioDefault2">
-                    Hawaiian-100
+                    hawaiian-100
                   </label>
                 </div>
-               <h1>TOTAL:</h1>
+               
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+               <button id="add" type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Click to Add</button>
               </div>
           </form>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Click to Add</button>
-        </div>
+       
       </div>
     </div>
   </div>
@@ -407,22 +421,25 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <!-- <th scope="row">1</th> -->
-                                <!-- <td>Samso</td>
-                                <td>Natto</td>
-                                <td>@samso</td> -->
+                              <th scope="col" id="name"></th>
+                              <th scope="col" id="size"></th>
+                              <th scope="col" id="crust"></th>
+                              <th scope="col" id="toppings"></th>
+                              <th scope="col" id="price"></th> 
                             </tr>
                             <tr>
-                                <!-- <th scope="row">2</th> -->
-                                <!-- <td>Tinor</td>
-                                <td>Horton</td>
-                                <td>@tinor_har</td> -->
+                              <!-- <th scope="col">Name</th>
+                              <th scope="col">Size</th>
+                              <th scope="col">Crust</th>
+                              <th scope="col">Toppings</th>
+                              <th scope="col">Price</th> -->
                             </tr>
                             <tr>
-                                <!-- <th scope="row">3</th> -->
-                                <!-- <td>Mythor</td>
-                                <td>Bully</td>
-                                <td>@myth_tobo</td> -->
+                              <!-- <th scope="col">Name</th>
+                              <th scope="col">Size</th>
+                              <th scope="col">Crust</th>
+                              <th scope="col">Toppings</th>
+                              <th scope="col">Price</th> -->
                             </tr>
                         </tbody>
                     </table>
