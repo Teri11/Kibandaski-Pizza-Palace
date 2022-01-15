@@ -105,3 +105,10 @@ body{
   font-size: xx-large;
 
 }
+body {
+  background: #eee
+}
+
+.height {
+  height: 100vh
+}

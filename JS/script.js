@@ -10,3 +10,14 @@ $(document).ready(function() {
   $(".work" ,this).slideToggle(100, "linear").display(100, "linear");
   });
 });
+
+// menu...
+// class pizzaOrder{
+//   constructor (size, crust, toppings) {
+//     this.size = size;
+//     this.crust = crust;
+//     this.topping = toppings;
+//     this.price = 0;
+// }
+// };
+
