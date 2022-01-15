@@ -1,6 +1,6 @@
 ## KIBANDASKI PIZZA PALACE
-A website about a pizza restaurant thats stands out to be the best with tasty meals<br>on 14/01/2022.
-<strong>By Kubai Augustine Mweteri</strong>
+A website about a pizza restaurant that stands out to be the best with tasty meals<br>on 14/01/2022.
+<br><strong>By Kubai Augustine Mweteri</strong>
 
 ## Description
 A web application that shows Kibandaski Pizza Palace what they offer at affordable prices.
@@ -23,7 +23,7 @@ A web application that shows Kibandaski Pizza Palace what they offer at affordab
 <li>The Website works just fine,there are no bugs.</li>
 
 ## Technologies Used
-1)HTML. <br>2)CSS.<br>3) Javascript.<br>4)jQuery.
+1)HTML. <br>2)CSS.<br>3) Javascript.<br>4)jQuery.<br> Bootstrap.
 
 ## Support and contact details
 Email Address;augustineteri157@gmail.com
