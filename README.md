@@ -23,7 +23,7 @@ A web application that shows Kibandaski Pizza Palace what they offer at affordab
 <li>The Website works just fine,there are no bugs.</li>
 
 ## Technologies Used
-1)HTML. <br>2)CSS.<br>3) Javascript.<br>4)jQuery.<br> Bootstrap.
+1)HTML. <br>2)CSS.<br>3) Javascript.<br>4)jQuery.<br> 5)Bootstrap.
 
 ## Support and contact details
 Email Address;augustineteri157@gmail.com
