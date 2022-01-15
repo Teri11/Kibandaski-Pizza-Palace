@@ -114,6 +114,46 @@ if(toppings=="pepperoni"){
   $("#toppings").append("hawaiian")
  
 }
+
+let name=""
+if(neapolitan.selected){
+  name="neapolitan";
+}else if(chicago.selected){
+  name="chicago";
+}else if(new_york_style.selected){
+  name="new_york_style";
+}else if(sicilian.selected){
+  name="sicilian";
+}else if(greek.selected){
+  name="greek";
+}else if(california.selected){
+  name="california";
+}else if(detroit.selected){
+  name="detroit";
+}else if(st.louis.selected){
+  name="st._louis";
+}
+
+
+
+if(name=="neapolitan"){
+  $("#name").append("neapolitan")
+}else if(name=="chicago"){
+  $("#name").append("chicago")
+}else if(name=="new_york_style"){
+  $("#name").append("new_york_style")
+}else if(name=="sicilian"){
+  $("#name").append("sicilian")
+}else if(name=="greek"){
+  $("#name").append("greek")
+}else if(name=="california"){
+  $("#name").append("california")
+}else if(name=="detroit"){
+  $("#name").append("detroit")
+}else if(name=="st.louis"){
+  $("name").append("st.louis")
+}
+
 });
 
 
