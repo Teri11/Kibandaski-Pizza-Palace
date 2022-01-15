@@ -139,7 +139,7 @@ var value = $("input[type=radio][name=pizza]:checked").val();
         if (value=="small") {
            value=800;
         }else if(value=="medium"){
-          value=1000;
+          value=10010;
        }else if(value=="large"){
          value=1500;
        }else{
@@ -167,9 +167,12 @@ var value = $("input[type=radio][name=pizza]:checked").val();
       }else{
         topz=0;
       }
-      
+      let quantity=$("#number").val();
+      $("#quantity").html(quantity);
       totalCost=value +crustyy +topz;
+      totalCost=totalCost*quantity;
       $("#price").html(totalCost);
+      
 
 // end of addition..
 
