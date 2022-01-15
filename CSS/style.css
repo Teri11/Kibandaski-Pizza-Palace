@@ -30,7 +30,9 @@ body{
   font-style: italic;
 }
 #btn{
-  margin-left:12rem; 
+  margin-left:50rem; 
+  margin-top:-24rem;
+
 }
 #about{
   text-align:center;
@@ -74,6 +76,8 @@ body{
   -ms-transform: scale(1.0); /* IE 9 */
   -webkit-transform: scale(1.0); /* Safari 3-8 */
   transform: scale(1.1); 
+  opacity: 0.5;
+  cursor: pointer;
 }
 .checked {
   color: orange;
@@ -86,4 +90,18 @@ body{
 }
 #btn2:hover{
   color: grey;
+}
+/* #pizz:hover{
+  opacity: 0.6;
+  cursor: pointer;
+} */
+.work{
+  display: none;
+  color:black;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translate(-50%,-50%);
+  font-size: xx-large;
+
 }
