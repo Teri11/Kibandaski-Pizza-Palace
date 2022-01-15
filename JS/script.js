@@ -40,6 +40,22 @@ $(document).ready(function() {
 
 $("#palace").on("submit", function (e) {
   e.preventDefault();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 let pizza=""
@@ -54,10 +70,11 @@ if(small.checked) {
 
 
 if(pizza=="small"){ 
+ 
   $("#size").append("small")
   
 }else if(pizza=="medium"){
- 
+
   $("#size").append("medium")
  
 }else if(pizza=="large"){
@@ -78,7 +95,7 @@ if(crispy.checked) {
 };
 
 if(crust=="crispy"){ 
-  
+ 
   $("#crust").append("crispy")
   
 }else if(crust=="stuffed"){
@@ -86,7 +103,7 @@ if(crust=="crispy"){
   $("#crust").append("stuffed")
  
 }else if(crust=="gluten_free"){
- 
+
   $("#crust").append("gluten_free")
  
 }
@@ -106,14 +123,58 @@ if(toppings=="pepperoni"){
   $("#toppings").append("pepperoni")
   
 }else if(toppings=="supreme"){
- 
+
   $("#toppings").append("supreme")
  
 }else if(toppings=="hawaiian"){
- 
+
   $("#toppings").append("hawaiian")
  
 }
+
+
+
+// adddition of checkout..
+var value = $("input[type=radio][name=pizza]:checked").val();
+        if (value=="small") {
+           value=800;
+        }else if(value=="medium"){
+          value=1000;
+       }else if(value=="large"){
+         value=1500;
+       }else{
+         value=0;
+       }
+       
+       var crustyy = $("input[type=radio][name=crusty]:checked").val();
+       if (crustyy=="crispy") {
+          crustyy=100;
+       }else if(value=="stuffed"){
+         crustyy=100;
+      }else if(crustyy=="gluten_free"){
+        crustyy=100;
+      }else{
+        crustyy=0;
+      }
+
+      var topz = $("input[type=radio][name=toppings]:checked").val();
+       if (topz=="pepperoni") {
+          topz=50;
+       }else if(topz==" supreme"){
+         topz=50;
+      }else if(topz=="hawaiian"){
+        topz=50;
+      }else{
+        topz=0;
+      }
+      
+      totalCost=value +crustyy +topz;
+      $("#price").html(totalCost);
+
+// end of addition..
+
+
+
 
 let name=""
 if(neapolitan.selected){
@@ -130,8 +191,8 @@ if(neapolitan.selected){
   name="california";
 }else if(detroit.selected){
   name="detroit";
-}else if(st.louis.selected){
-  name="st._louis";
+}else if(saint_louis.selected){
+  name="saint_louis";
 }
 
 
@@ -150,8 +211,8 @@ if(name=="neapolitan"){
   $("#name").append("california")
 }else if(name=="detroit"){
   $("#name").append("detroit")
-}else if(name=="st.louis"){
-  $("name").append("st.louis")
+}else if(name=="saint_louis"){
+  $("#name").append("saint_louis")
 }
 
 });
