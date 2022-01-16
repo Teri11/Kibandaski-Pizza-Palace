@@ -1,6 +1,6 @@
 // alert news...
-let restaurant=confirm("We'd like to show you notifications for the latest pizza offers and updates.")
-alert("Thank you for your response\n we are here to serve you better\n and welcome again.");
+// let restaurant=confirm("We'd like to show you notifications for the latest pizza offers and updates.")
+// alert("Thank you for your response\n we are here to serve you better\n and welcome again.");
 
 // hover on landing page image..
 $(document).ready(function() {
@@ -42,21 +42,6 @@ $("#palace").on("submit", function (e) {
   e.preventDefault();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
 let pizza=""
 if(small.checked) {
@@ -223,6 +208,41 @@ if(name=="neapolitan"){
 
 
 
+  $("#btnn").on("click", function(event) {
+    event.preventDefault();
+            var name = $("#namee").val()
+            var contact = $("#contactt").val()
+            var destination = $("#destinationn").val()
+            alert("Thank you" +" " + name + ",\n We have received your order from: "+" "+ contact+" "+ ",\n Your order will be delivered to your location in:"+" "+ destination)
+});
+
+
+
+    // hide alert....
+$(document).ready(function(){
+  $("#add").click(function(){
+  $("#exampleModal").hide();
+  });
+  $("#add").click(function(){
+  $("#exampleModal2").show();
+  });
+  });
+  $(document).ready(function(){
+    $("#proceed").click(function(){
+    $("#exampleModal2").hide();
+    });
+    $("#proceed").click(function(){
+    $("#exampleModal1").show();
+    });
+    });
+    $(document).ready(function(){
+      $("#btnn").click(function(){
+      $("#exampleModal1").hide();
+      });
+      $("#btnn").click(function(){
+      $("#end").show();
+      });
+      });
 
 
 
@@ -234,39 +254,3 @@ if(name=="neapolitan"){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// choosePizza = function () {
-//   this.flavor = $("#flavor option:selected").val();
-// document.getElementById("pflavor").innerHTML = this.flavor;
-// }
-// chooseSize = function () {
-//   this.size = $("#size option:selected").val();
-// document.getElementById("psize").innerHTML = this.size;
-// }
-// chooseCrust = function () {
-//   this.crust = $("#crust option:selected").val();
-// document.getElementById("pcrust").innerHTML = this.crust;
-// }
-// chooseToppings = function () {
-//   this.topping = $("#topping option:selected").val();
-// document.getElementById("ptoppings").innerHTML = this.topping;
-// }
-// quantitySelectChange = function () {
-//   this.quantity = $("#number").val();
-// document.getElementById("pnumber").innerHTML = this.quantity;
-// }
