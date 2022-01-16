@@ -11,32 +11,7 @@ $(document).ready(function() {
   });
 });
 
-// menu....
 
-// class pizzaOrder{
-//   constructor (size, crust, toppings) {
-//     this.size = size;
-//     this.crust = crust;
-//     this.topping = toppings;
-//     this.price = 0;
-// }
-// };
-
-// choosePizza=function(){
-//   this.size = $("#small input:selected").val();
-//   document.getElementById("#size").innerHTML = this.size;
-// }
-  
-// choosePizza1=function(){
-//   this.size = $("#medium").val();
-//   document.getElementById("#size").innerHTML = this.size;
-// }
-  
-// choosePizza2=function(){
-//   this.size = $("#large").val();
-//   document.getElementById("#size").innerHTML = this.size;
-// }
-  
 
 $("#palace").on("submit", function (e) {
   e.preventDefault();
@@ -134,7 +109,7 @@ var value = $("input[type=radio][name=pizza]:checked").val();
        var crustyy = $("input[type=radio][name=crusty]:checked").val();
        if (crustyy=="crispy") {
           crustyy=100;
-       }else if(value=="stuffed"){
+       }else if(crustyy=="stuffed"){
          crustyy=100;
       }else if(crustyy=="gluten_free"){
         crustyy=100;
@@ -207,13 +182,13 @@ if(name=="neapolitan"){
 
 
 
-
+// form validation
   $("#btnn").on("click", function(event) {
     event.preventDefault();
             var name = $("#namee").val()
             var contact = $("#contactt").val()
             var destination = $("#destinationn").val()
-            alert("Thank you" +" " + name + ",\n We have received your order from: "+" "+ contact+" "+ ",\n Your order will be delivered to your location in:"+" "+ destination)
+            alert("Thank you" +" " + name + ",\n We have received your order for: "+" "+ contact+" "+ ",\n Your order will be delivered to your location in:"+" "+ destination)
 });
 
 
