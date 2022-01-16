@@ -455,15 +455,56 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-               <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>  -->
-               <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Proceed to Checkout</button>
-               <!-- <button type="button" class="btn btn-secondary">Proceed to Checkout</button> -->
+
+              <button id="proceed"type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@getbootstrap">Proceed to Checkout</button>
+
+               <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-whatever="@getbootstrap" data-bs-target="#exampleModal2">Proceed to Checkout</button> -->
+               
                </div>
         </div>
     </div>
 </div>
 
 <!-- end of modal checkout -->
+
+<!-- Delivery info modal -->
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Kibandaski Pizza Palace Delivery🍕🍕</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="forms">
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">NAME:</label>
+            
+            <input id="namee" type="text " class="form-control  bg-transparent"  placeholder="Name..." required >
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">CONTACTS:</label>
+            
+            <input id="contactt" type="text " class="form-control  bg-transparent"  placeholder="Contact..." required >
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">DESTINATION:</label>
+            
+            <input id="destinationn" type="text " class="form-control  bg-transparent"  placeholder="Destination..." required >
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+        <button id="btnn" type="button" class="btn btn-secondary">Order</button>
+        <span id="end"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of delivery info modal -->
 
 
 
